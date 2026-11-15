@@ -46,15 +46,17 @@
         </section>
         <section>
             <h2>Pre-Order & Inquiries</h2>
-            <form action="#" method="post">
+            <form id="preorder-form" action="#" method="post">
                 <fieldset>
                     <legend>Order Details</legend>
                     
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name">
+                    <span id="name-error" style="color: #d9534f; font-size: 0.85rem; margin-bottom: 0.5rem; display: block;"></span>
                     
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="text" id="email" name="email">
+                    <span id="email-error" style="color: #d9534f; font-size: 0.85rem; margin-bottom: 0.5rem; display: block;"></span>
                     
                     <label for="pickup-date">Pickup Date:</label>
                     <input type="date" id="pickup-date" name="pickup_date">
